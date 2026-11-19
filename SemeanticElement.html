@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        
+        /* universal selector has least priority */
+        /* *{
+            background-color: cornflowerblue;
+        } */
+        header{
+            background-color:coral;
+        }
+        a[href="https://www.google.com/"]{
+            background-color:aquamarine;
+            color: hotpink;
+        }
+        /*Id selector*/
+        #art1 {
+            background-color: beige;
+        }
+        /*class selector*/
+        .s1{
+            background-color: cadetblue;
+        }
+        /* combination of id selector and type selector*/
+        #art1 h3 {
+            background-color:blue;
+        }
+        /* press ctrl+/ to comment */
+    </style>
+    <link rel="stylesheet" href="/CSS/mystyle.css">
+</head>
+<body>
+    <header>
+        <h1>My Recipe Blog</h1>
+        <nav>
+            <hr></hr>
+            <a href="#">Home</a>
+            <a href="https://www.google.com/">Recipes</a>
+            <a href="#">About us</a>
+            <a href="#">Contact us</a>
+        </nav>
+    </header>
+    <main>
+        <code>
+            Function addition(){
+                console.log("Sum is printed");
+            }
+        </code>
+        <pre>
+            function addition(){
+                console.log("Sum is printed")
+            }
+        </pre>
+        <p>Name of this language is <abbr title="Hypertext markup language">HTML</abbr></p><br>
+        <section class="s1">
+            <hr></hr>
+            <h2>Italian dishes</h2>
+            <article id="art1">
+                <h3>Spaghetti</h3>
+                <p>
+                    1. Take a large pot and add water to it. Boil the water and add salt and a drop of oil.<br>
+                    2. Place the spaghetti in the water and keep it in water till it become little soft.<br>
+                    3. Drain the water and keep spaghetti aside.<br>
+                    4. Chop your favorite vegetables into thin slices or small pieces (common choices include onions, garlic, capsicum/bell peppers, carrots, and corn).<br>
+                    5. Heat olive oil or cooking oil in a large pan or skillet over medium heat.<br> 
+                    6. Add minced garlic and chopped onions, sautéing for 1 to 2 minutes until fragrant and translucent.<br>
+                    7. Add the rest of your chopped vegetables and cook for 5 to 7 minutes until they are tender yet retain a slight crunch.<br>
+                    8. Let veggies be cooked and then add Spaghetti and seasonings.<br>
+                </p>
+            </article>
+        </section><hr>
+        <section class="s1">
+            <h2>Chinese recipes</h2>
+            <article>
+                <h3>Noodles</h3>
+            <p>
+                <li>1. Boil the noodles in water until they are soft.</li>
+                <li>2. Drain the noodles and keep them aside.</li>
+                <li>3. Heat oil in a pan.</li>
+                <li>4. Add onion, carrot and capsicum.</li>
+                <li>5. Fry the vegetables for a few minutes.</li>
+                <li>6. Add soy sauce and chilli sauce.</li>
+                <li>7. Add the boiled noodles.</li>
+                <li>8. Mix everything well.</li>
+                <li>9. Add salt and black pepper.</li>
+                <li>10. Cook for 2-3 minutes and serve hot.</li>
+            </p>
+            </article>
+        </section><hr>
+    </main>
+    <footer>
+        <address>Visit us: Sector 8, Chandigarh<br>Contact: 9588****49<br>Email: Shiva74836@gmail.com</address><br>
+        <p>&copy; All rights reversed</p>
+    </footer>
+</body>
+</html>

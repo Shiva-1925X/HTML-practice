@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+</head>
+<body>
+    
+
+    <h1 onclick="alert('Wlecome to my page')">This is heading</h1>
+    <script>
+        console.log("Welcome to Javascript class");/*Internal javascript*/
+        console.log(169+31)
+        var section="K3P26NE";  /*var is variable*/
+        var marks = 90;
+        var ispass = true;
+        var  age;
+        var val = null;
+        console.log("my section is:", section, "and marks are:", marks);
+        console.log("my section is:"+ section+ "and marks are:"+ marks);
+        console.log(typeof section, typeof marks, typeof  ispass, typeof age, typeof val);
+        //1
+        if(5>2){
+            var course = "btech";
+            console.log(course)
+        }
+        console.log(course)
+
+        //2
+        var x;
+        console.log(x)
+
+        //3. Redeclaration
+        var q = 50;
+        var q = "Hello";
+        console.log(q);
+
+        //4. Reassignment
+        let z = 80;
+        z=10;
+        console.log(z);
+
+        //5. Hoisting
+        console.log(r);
+        var r = 90;
+
+        //6. Arithmatic operators
+        var x = 10;
+        var y = 20;
+        console.log(x+y, x-y, x*y, x/y, x**y, x%y, x++, ++x)
+
+        //7. incrimenting and decrimenting
+        let m = 10
+        let n = m--
+        console.log(m);
+        console.log(n);
+
+        //8. Assignment operators
+        let a = 30;
+        let b = 20;
+        console.log(a+=b, a-=b, a*=b);
+
+        //9. comparision operators
+        let c = 10;
+        let d = "10";
+        console.log(c==d, c>d, c<d, c<=d, c>=d, );
+
+        //10. logical operators
+        let a1 = 3;
+        let a2 = 3;
+        console.log((a1>a2) && (a1==a2));
+
+    //Branching statements
+        marks = 88;
+        if(marks >= 90){
+            console.log("Elite batch")
+        }
+        else if(marks >= 75){
+        
+            console.log("Intermidiate batch")
+        }
+        else if(marks >= 60){
+        
+            console.log("Regular batch")
+        }
+        else{
+            console.log("Fail")
+        }
+
+    // looping statements
+        for(i=3; i<=15 ; i++){
+            console.log(i);
+        }
+
+        let l = 5;
+        while(l<=10){
+            console.log(l);
+            l++;
+        }
+
+        let o = 10;
+        do{
+            console.log(o);
+            o++;
+        }while(o<=20);
+
+    // Implicit and Explicit type conversion
+        let ag ="5";
+        console.log(5+ag); //implicit where value if defined by it self
+        console.log("3" - 1);
+
+        console.log(Number("5")+2); //explicit type where we define the value
+        console.log(parseInt("13.989878789769878867gsayvcljskadbgf"));// parsint give integer only
+        
+
+
+    </script>
+    // <script src="/Javascriptfolder/myscript.js"></script>
+</body>
+</html>
+
+<!--
+Difference between let, var and const 
+    1. var is having scope outside the block also, let and const are block scoped, let and const cannot be used outside the block 
+    2. If value is not defined, var shows undefined, let shows undefined, const shows error
+    3. Redeclaration
+        var - allowed
+        let and const - Not allowed 
+    4. Reassignment
+        var & let - allowed
+        const- not allowed
+    5. Hoisting~~~> Redeclaration process earlier and then code executes
+        var- allowed
+        let and const- not allowed
+
+Branching statements
+
+        -->

@@ -1,0 +1,73 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        #parent{
+            position: relative;
+            width: 800px;
+            height: 500px;
+            background-color: darkgray ;
+            border: 3px solid black;
+        }
+        #div1{
+
+            position: relative;
+            width: 200px;
+            height: 150px;
+            background-color: aquamarine;
+            border: 2px solid red;
+            padding: 20px;
+            box-sizing: border-box;
+            box-shadow: 10px 10px 10px blue;
+            left: 20px;
+            top: 20px;
+            z-index: 3; 
+            transition: 4s transform;
+            animation: move 3s infinite alternate;
+        }
+        #div1:hover{
+            transform: scale(3); /*rotate, skew, translate, scale */
+        }
+        @keyframes move{ 
+            from{
+                /* transform: scale(0.5) */
+                background-colour: red;
+            
+            }
+            to{
+                /* transform: scale(2) */
+                background-color: blue;
+            }
+        }
+        
+        /* #div2{
+            position: absolute;
+            width: 200px;
+            height: 150px;
+            background-color: beige;
+            border: 2px solid black;
+            padding: 20px;
+            box-sizing: border-box;
+            box-shadow: 10px 10px 10px brown;
+            top: 170px;
+            left: 220px;
+            z-index: 2;
+        } */
+    </style>
+</head>
+<body>
+    <div id="parent">
+        <div id="div1">
+        this is div section
+        </div>
+        <!-- <div id="div2">
+        This is second div
+        </div> -->
+    </div>
+</body>
+</html>
